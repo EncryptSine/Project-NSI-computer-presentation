@@ -30,53 +30,103 @@ body {
 
 .intro h1 {
   position: absolute;
+  /*Définition du système de positionnement*/
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /*On centre*/
   font-size: 30vh;
+  /*Taille de la police*/
   color: rgb(255, 255, 255);
+  /*Couleur de la police*/
 }
 
 section {
   height: fit-content;
+  /*taille de la section*/
   background-color: white;
-  clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+  /*sa couleur*/
+  clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+  /*Un clip-path pour le style*/
 }
 
 section h1 {
   padding-top: 300px;
+  /*Padding pour le titre*/
   text-align: center;
+  /*On le centre*/
   font-size: 80px;
+  /*Définition de la taille de la police*/
   color: black;
+  /*Couleur*/
 }
 
 section aside,
 section img {
   background-color: rgb(255, 255, 255);
+  /*Couleur de fond*/
   border-radius: 20px;
+  /*arrondi*/
   padding: 20px;
+  /*Padding*/
   width: 40%;
-  box-shadow: 5px 5px 50px 0px rgb(0, 0, 0)
+  /*largeur*/
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  /*Ombre*/
 }
 
 aside p {
   font-size: larger;
+  /*Taille de police*/
 }
 
 aside h2 {
   font-size: 3rem;
+  /*taille de la police*/
 }
 
 .container {
   margin: 10% auto auto;
+  /*Marge*/
   display: flex;
+  /*On passe notre conteneur en flex*/
   flex-direction: row;
+  /*On définit sur "row" la direction que celui-ci va prendre*/
   justify-content: space-around;
+  /*On gère les éléments du container*/
 }
+
+
+
 
 img {
   width: 40%;
   height: 20%;
+  /*Dimensions de l'image*/
   border-radius: 20px;
+  /*arrondi*/
   box-shadow: 5px 5px 50px 0px rgba(255, 255, 255, 0.5);
+  /*ombres*/
+}
+
+a{
+  display: none; /*On cache le lien*/
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  /*Position du lien*/
+  width: 100%;
+  /*Largeur*/
+  display: inline;
+  /*On l'affiche à nouveau*/
+  padding: 1vh 0 1vh 0;
+  /*Padding*/
+  background-color: crimson;
+  /*Couleur de fond*/
+  color: white;
+  /*Couleur du texte*/
+  text-align: center;
+  /*On centre le texte*/
 }

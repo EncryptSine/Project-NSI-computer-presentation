@@ -23,10 +23,24 @@ let delay = 0;
 
 scene.on('update', e => {
   scrollPos = e.scrollPos / 1000;
-})
+}) // On prend la position du scroll
 
 setInterval(() => {
-  delay += (scrollPos - delay) * accelAmount;
+  delay += (scrollPos - delay) * accelAmount; // Pour faire une effet de "fluidité"
 
-  video.currentTime = delay;
+  video.currentTime = delay; // On avance/recule dans la vidéo
 }, 33.3)
+
+window.onscroll = function() {Sticky()}; // Lance la fonction pour le sticky à chaque scroll
+
+var bouton = document.getElementById("bouton");
+var sticky = bouton.offsetTop;
+// on récupère le bouton
+
+function Sticky() {
+  if (window.pageYOffset >= sticky) {
+    bouton.classList.add("sticky")
+  } else {
+    bouton.classList.remove("sticky");
+  }
+} // Si l'emplacement du bouton sors de l'écran, on lui met la classe "sticky", sinon on l'enlève.
