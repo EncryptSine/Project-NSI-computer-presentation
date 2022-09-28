@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*On retire les margins/padding par défaut*/
+    box-sizing: border-box;
+    /*inclure le padding et le margin dans la taille des éléments*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    /*On met la police*/
+}
+
+body {
+    font-family: sans-serif;
+    /*On met la police*/
+    background-color: black;
+    /*couleur de fond*/
+}
+
+.intro {
+    height: 100vh;
+    /*hauteur de la classe "intro"*/
+}
+
+.intro video {
+    height: 100%;
+    width: 100%;
+    /*dimensions de la vidéo d'intro*/
+    object-fit: cover;
+    /*gestion du remplissage*/
+}
+
+.intro h1 {
+    position: absolute;
+    /*Définition du système de positionnement*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*On centre*/
+    font-size: 30vh;
+    /*Taille de la police*/
+    color: rgb(255, 255, 255);
+    /*Couleur de la police*/
+}
+
+.coucou {
+    display: block;
+    /*Pour afficher*/
+    z-index: 3;
+    /*Le mettre au-dessus de l'overlay*/
+}
+
+a {
+    display: none;
+    /*On cache le lien*/
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    /*Position du lien*/
+    width: 100%;
+    /*Largeur*/
+    display: inline;
+    /*On l'affiche à nouveau*/
+    padding: 1vh 0 1vh 0;
+    /*Padding*/
+    background-color: crimson;
+    /*Couleur de fond*/
+    color: white;
+    /*Couleur du texte*/
+    text-align: center;
+    /*On centre le texte*/
+}
+
+.bouton2 {
+    padding: 16px 32px; /*padding sur le bouton*/
+    text-align: center; /* On centre tout  */
+    font-size: 16px; /*Taille de la police*/
+    margin: auto; 
+    margin-top: 2%;
+    /*Marges*/
+    transition-duration: 0.4s;
+    /*Transition*/
+    background-color: white;
+    color: black;
+    border: 2px solid crimson;
+    /*Les Couleurs*/
+    border-radius: 5px;
+    /*Arrondi*/
+    display: block;
+    /*Affichage "bloc"*/
+}
+
+.bouton2:hover {
+    background-color: crimson;
+    color: white;
+} /*Changement de couleur lors du survol*/
+
+/* Ajout de la balise flex pour bouger les boites */
+.align-box {
+    display: flex;
+}
+
+section h1 {
+    padding: 15vh 0 10vh 0;
+    /*Padding pour le titre*/
+    text-align: center;
+    /*On le centre*/
+    font-size: 80px;
+    /*Définition de la taille de la police*/
+    color: black;
+    /*Couleur*/
+}
+
+section {
+    background-color: rgb(255, 255, 255);
+    /*sa couleur*/
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+    /*Un clip-path pour le style*/
+}
+
+aside img{
+    display: block; /*Affichage en bloc*/
+    margin: auto;
+}
+
+aside p {
+    display: none;
+    /*On cache le texte par défaut*/
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /*Position*/
+    width: 50vw;
+    height: 50vh;
+    padding: 5vh;
+    /*Dimensions*/
+    background-color: white;
+    /*Fond*/
+    border-radius: 20px;
+    /*Petit arrondi*/
+    border: 2px solid black;
+    /*Bordure*/
+}
+
+h2 {
+    text-align: center;
+    /*centrer*/
+}
+
+.container {
+    display: flex;
+}
+
+aside {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 40px;
+    width: 95%;
+    flex: 0.5;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*Position*/
+    background-color:#000;
+    opacity: .75;
+    /*Fond*/
+    z-index: 1;
+    /*Pour rester au-dessus de la page mais sous le  texte*/
+}
+
+.stop-scrolling {
+    overflow: hidden; /*On empêche le scroll*/
+}
+
+footer {
+    /* Fond du footer en gris */
+    background-color: rgb(26, 26, 26);
+    /* On aligne le texte au centre */
+    text-align: center;
+    /* On met du padding */
+    padding: 1%;
+	/*Police blanche*/
+	color: white;
+	/*Police sans serif*/
+	font-family: sans-serif;
+	/*Taille de police*/
+	font-size: 150%;
+}

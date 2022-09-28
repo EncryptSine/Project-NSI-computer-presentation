@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*On retire les margins/padding par défaut*/
+    box-sizing: border-box;
+    /*inclure le padding et le margin dans la taille des éléments*/
+}
+
+body {
+    font-family: sans-serif;
+    /*On met la police*/
+    background-color: white;
+    /*couleur de fond*/
+}
+
+section {
+    /* On met du padding sur la section */
+    padding: 2%;
+}
+
+h1 {
+    /* On stilise H1 */
+    /* On aligne le texte au centre */
+    text-align: center;
+    /* On le souligne */
+    text-decoration: underline;
+    /* On met du padding seulement au dessus */
+    padding-top: 1%;
+}
+
+p {
+    /* On change sa taille */
+    font-size: 150%;
+    /* On met sa couleur en blanc */
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    /*Position du lien*/
+    width: 100%;
+    /*Largeur*/
+    display: inline;
+    /*On l'affiche à nouveau*/
+    padding: 1vh 0 1vh 0;
+    /*Padding*/
+    background-color: crimson;
+    /*Couleur de fond*/
+    color: white;
+    /*Couleur du texte*/
+    text-align: center;
+    /*On centre le texte*/
+    z-index: 18;
+}
+
+img {
+    /* On met un margin */
+    margin: 2%;
+    /* On met une ombre aux images */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+article {
+    display: flex;
+    /* On aligne au centre */
+    align-items: center;
+    /* On met du padding */
+    padding: 2%;
+}
+
+span {
+    /* On met du padding */
+    padding: 1%;
+    /* On met du margin */
+    margin-right: 7%;
+    /* On change sa taille */
+    font-size: 150%;
+}
+
+.clip {
+    /* Création d'un clip path */
+    clip-path: polygon(0 6%, 100% 0%, 100% 94%, 0% 100%);
+    /* On met le fond en noir */
+    background-color: black;
+    /* On met le texte en blanc */
+    color: white;
+}
+
+footer {
+    /* Fond du footer en gris */
+    background-color: rgb(26, 26, 26);
+    /* On aligne le texte au centre */
+    text-align: center;
+    /* On met du padding */
+    padding: 1%;
+}
